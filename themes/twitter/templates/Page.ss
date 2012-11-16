@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+    <!--[if !IE]><!-->
+    <html lang="$ContentLocale">
+    <!--<![endif]-->
+    <!--[if IE 6 ]><html lang="$ContentLocale" class="ie ie6"><![endif]-->
+    <!--[if IE 7 ]><html lang="$ContentLocale" class="ie ie7"><![endif]-->
+    <!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]-->
+    
+        <head>
+            <% base_tag %>
+            <title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            $MetaTags(false)
+
+            <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+
+            <!-- styles -->
+            <link rel="stylesheet" href="/themes/twitter/bootstrap/css/bootstrap.css" type="text/css">
+            <link rel="stylesheet" href="/themes/twitter/css/main.css" type="text/css">       
+            <link rel="stylesheet" href="/themes/twitter/bootstrap/css/bootstrap-responsive.css" type="text/css">
+
+            <style type="text/css">
+                cufon{text-indent:0!important;}
+                @media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}
+                cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}
+                cufon canvas{position:relative!important;}}
+                @media print{cufon{padding:0!important;}
+                cufon canvas{display:none!important;}}
+            </style>
+
+             <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+            <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+
+            <link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
+        </head>
+
+        <body>
+
+            <!-- Top navigation bar -->
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container top-navigation">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">Menu</a>  
+                        <div class="nav-collapse">
+
+                            <ul class="nav">
+                                <li class="current active"><a href="#">Home</a></li>
+                                <li><a href="#">Item 1</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li class="nav-header">Nav header</li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Item 3</a></li>
+                                <li><a href="#">Item 4</a></li>
+                                <li><a href="#">Item 5</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+
+                            <div class="nav-social pull-right">
+                                <a href="https://twitter.com/#!/username" target="_blank"><img src="/themes/twitter/img/twitter_sm.png"></a>&nbsp;&nbsp;
+                                <a href="http://www.facebook.com/fb_id" target="_blank"><img src="/themes/twitter/img/facebook_sm.png"></a>&nbsp;&nbsp; 
+                                <a href="http://www.youtube.com/user/username" target="_blank"><img src="/themes/twitter/img/youtube_sm.png"></a>&nbsp;&nbsp;  
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div><!--/ Top navigation bar -->
+
+            <!-- Top Header -->
+            <div class="container">
+
+                <div class="logo">
+                    <div class="moduletable">			
+                        <div class="custom">
+                            <p><a href="#"><img src="http://www.placehold.it/500x130/66B8D0/FFFFFF&text=LOGO" alt=""></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search Box -->
+                <div class="search">
+                    <div class="moduletabletelephone">
+                        <div class="customtelephone">
+                            <p><span style="color: #49afcd; font-size: 14px; font-weight: bold;">Tel: (+64) 12 345 6789</span></p>
+                        </div>
+                    </div>
+
+                    <div class="moduletable">
+                        <form action="" method="post">
+                            <div class="search">
+                                <input name="search-term" id="mod-search-searchword" maxlength="20" class="search-term" type="text" size="15" value="Search..." onblur="if (this.value==&#39;&#39;) this.value=&#39;Search...&#39;;" onfocus="if (this.value==&#39;Search...&#39;) this.value=&#39;&#39;;">
+                                <input type="submit" value="Go" class="btn" onclick="this.form.searchword.focus();">	
+                            </div>
+                        </form>
+                    </div>
+                </div><!--/ Search Box -->
+
+            </div><!--/ Top Header -->
+
+    <!-- Page Container -->
+    <div class="container">
+
+        <!-- Breadcrumbs -->
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="breadcrumbs">
+                    <span class="showHere">You are here: </span><span>Home</span>
+                </div>
+            </div>
+        </div><!--/ Breadcrumbs -->
+
+        <!-- Top image and text blocks -->
+        <div class="row-fluid">
+
+            <!-- First Block -->
+            <div class="span4">            
+                <div class="moduletable">
+                    <div class="custom">
+                        <p><img src="http://www.placehold.it/363x135" alt="" width="363" height="135"></p>
+                        <h2>Block 1</h2>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lacus a sem porttitor fringilla blandi.</p>
+                        <a class="btn btn-info" href="#">Button Action</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Block -->
+            <div class="span4">            
+                <div class="moduletable">
+                    <p><img src="http://www.placehold.it/363x135" alt="" width="363" height="135"></p>
+                    <h2>Block 2</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lacus a sem porttitor fringilla blandi.</p>
+                    <a class="btn btn-info" href="#">Button Action</a></p>
+                </div>
+            </div>
+
+            <!-- Third Block -->
+            <div class="span4">            
+                <div class="moduletable">
+                    <p><img src="http://www.placehold.it/363x135" alt="" width="363" height="135"></p>
+                    <h2>Block 3</h2>
+                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lacus a sem porttitor fringilla blandi.</p>
+                    <a class="btn btn-info" href="#">Button Action</a></p>
+                </div>
+            </div>
+
+        </div><!--/ Top image and text blocks-->
+
+        <!-- Carousel block -->
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="hero-unit-home">    
+              <div class="moduletable">
+                <div id="myCarousel" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="item active"><img src="http://www.placehold.it/1140x181&text=slide 1" alt="" width="1140" height="181"></div>
+                    <div class="item"><img src="http://www.placehold.it/1140x181&text=slide 2" alt="" width="1140" height="181"></div>
+                    <div class="item"><img src="http://www.placehold.it/1140x181&text=slide 3" alt="" width="1140" height="181"></div>
+                  </div>
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a> 
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div><!--/ Carousel block -->
+
+        <!-- Primary Content row -->
+        <div class="row-fluid">
+
+            <!-- Main content hero -->
+            <div class="span9">
+              <div class="hero-unit">
+
+                <h1>Primary Title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque lacus a sem porttitor fringilla blandit dolor ultricies. Nunc laoreet dolor nec nisi porttitor auctor. Nullam rhoncus felis non ante ultrices id faucibus massa semper. Vivamus lobortis, odio sit amet dictum imperdiet, lorem arcu fringilla est, quis venenatis massa magna eget lacus. Sed id lacus et risus cursus suscipit in at leo. Quisque ac eros nisi. Vestibulum eu neque a erat faucibus pulvinar in sit amet sem. Aliquam placerat pharetra neque, rutrum varius quam vestibulum eget. Praesent interdum, arcu in dapibus bibendum, dui nibh vulputate quam, ut commodo elit sapien non lacus. Morbi scelerisque nulla eu metus elementum sit amet ullamcorper lectus posuere. Vivamus suscipit tellus sed turpis pretium eu commodo urna aliquet. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur dignissim arcu quis ligula pellentesque a mollis dolor convallis. Donec vel leo sit amet mi euismod fermentum.</p>          
+
+              </div>
+            </div><!--/ Main content hero -->
+
+            <!-- Right hand well block -->             
+            <div class="span3">
+                <div class="well sidebar-nav">
+                    <div class="moduletable">
+                        <h3 class="block-title">Well Title</h3>
+
+                        <ul>
+                          <li><a href="#"><strong>Request a Quote</strong></a></li>
+                          <li><a href="#"><strong>Whats a CMS?</strong></a></li>
+                          <li><a href="#"><strong>CMS Specialists</strong></a></li>
+                          <li><a href="#"><strong>Multilingual Experts</strong></a></li>
+                          <li><a href="#"><strong>CMS Training</strong></a></li>
+                          <li><a href="#"><strong>CMS Web Design</strong></a></li>
+                          <li><a href="#"><strong>Contact us</strong></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div><!--/ Right hand well block -->  
+
+        </div><!-- Primary Content row -->
+
+        <!-- Lower text block row -->
+        <div class="row-fluid">
+
+            <div class="span4">
+                <div class="moduletable">
+                    <h3 class="block-title">Block 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus egestas diam vel dapibus. Fusce nisi leo, volutpat et cursus et, ultrices nec libero. Cras blandit accumsan pulvinar. Integer eleifend scelerisque lorem vitae ultricies. Nulla varius, enim in porttitor scelerisque, erat felis tincidunt mauris, vitae ornare est odio tristique ligula.</p>
+                    <p>Second paragraph of text</p>       
+                </div>
+            </div><!--/span-->
+
+            <div class="span4">
+                <div class="moduletable">
+                    <h3 class="block-title">Block 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus egestas diam vel dapibus. Fusce nisi leo, volutpat et cursus et, ultrices nec libero. Cras blandit accumsan pulvinar. Integer eleifend scelerisque lorem vitae ultricies. Nulla varius, enim in porttitor scelerisque, erat felis tincidunt mauris, vitae ornare est odio tristique ligula.</p>	
+                </div>
+            </div><!--/span-->
+
+            <div class="span4">
+                <div class="moduletable">
+                    <h3 class="block-title">Block 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus egestas diam vel dapibus. Fusce nisi leo, volutpat et cursus et, ultrices nec libero. Cras blandit accumsan pulvinar. Integer eleifend scelerisque lorem vitae ultricies. Nulla varius, enim in porttitor scelerisque, erat felis tincidunt mauris, vitae ornare est odio tristique ligula.</p>	
+                    <p>Second paragraph of text</p>  
+                    <p>Third paragraph of text</p>  
+                </div>
+            </div><!--/span-->
+
+        </div><!--/ Lower text block row -->
+
+    </div><!--/ Page container-->
+  
+    <!-- Footer -->  
+    <div id="page-footer">  
+        <div class="container">       
+            Footer
+        </div>
+    </div><!--/ Footer -->  
+
+    <!-- Javascript at the end so the pages load faster -->
+    <% require javascript(http://code.jquery.com/jquery.min.js) %>
+    <% require javascript(themes/twitter/bootstrap/js/bootstrap.min.js) %>
+    <% require javascript(themes/twitter/js/cufon-yui.js) %>
+    <% require javascript(themes/twitter/js/Helvetica_Neue_LT_Std_250.font.js) %>
+
+    <script>
+          // Start the carousel
+          $('#myCarousel').carousel();
+    </script>
+
+</body>
+</html>
